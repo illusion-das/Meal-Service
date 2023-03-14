@@ -7,11 +7,11 @@
 }
 
 @font-face {
-    font-family: 'Pretendard Variable';
-    font-weight: 45 920;
-    font-style: normal;
-    font-display: swap;
-    src: local('Pretendard Variable'), url('font/PretendardVariable.ttf') format("truetype");
+  font-family: 'Pretendard Variable';
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: local('Pretendard Variable'), url('font/PretendardVariable.ttf') format("truetype");
 }
 
 body {
@@ -28,82 +28,99 @@ body {
 .Pretendard {
   font-family: Pretendard Variable, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
 }
-@media (prefers-color-scheme: dark) {
-    body{
-        background-color: #1e1e1e;
-    }
-    .mainpage{
-        background-color: #1e1e1e;
-    }
-    .dockui {
-        background: #1e1e1e;
-        box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.05);
-    }
 
-    .titlemove {
-        color: #ffffff;
-    }
-    .load {
-        color: #ffffff;
-    }
-    .meallist_text{
-      font-family: 'Pretendard Variable';
-      font-size: 14px;
-      font-weight: 500;
-      margin-bottom: 15px;
-      color: #ffffff;
-    }
-    svg {
-      fill: #ffffff;
-    }
-    .alarmui {
-        background-color: #1e1e1e;
-    }
-    .titlebox {
-        color: #ffffff;
-    }
-    .subtitlebox {
-        color: #ffffff;
-    }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e;
+  }
+
+  .mainpage {
+    background-color: #1e1e1e;
+  }
+
+  .dockui {
+    background: #1e1e1e;
+    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.05);
+  }
+
+  .titlemove {
+    color: #ffffff;
+  }
+
+  .load {
+    color: #ffffff;
+  }
+
+  .meallist_text {
+    font-family: 'Pretendard Variable';
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+
+  svg {
+    fill: #ffffff;
+  }
+
+  .alarmui {
+    background-color: #1e1e1e;
+  }
+
+  .titlebox {
+    color: #ffffff;
+  }
+
+  .subtitlebox {
+    color: #ffffff;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-    body{
-        background-color: #fbfbfb;
-    }
-    .mainpage{
-        background-color: #ffffff;
-    }
-    .dockui {
-        background: #fbfbfb;
-        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
-    }
+  body {
+    background-color: #fbfbfb;
+  }
 
-    .titlemove {
-        color: #1e1e1e;
-    }
-    .load {
-        color: #1e1e1e;
-    }
-    .meallist_text{
-      font-family: 'Pretendard Variable';
-      font-size: 14px;
-      font-weight: 500;
-      margin-bottom: 15px;
-      color: #1e1e1e;
-    }
-    svg {
-      fill: #1e1e1e;
-    }
-    .alarmui {
-        background-color: #fbfbfb;
-    }
-    .titlebox {
-        color: #1e1e1e;
-    }
-    .subtitlebox {
-        color: #1e1e1e;
-    }
+  .mainpage {
+    background-color: #ffffff;
+  }
+
+  .dockui {
+    background: #fbfbfb;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .titlemove {
+    color: #1e1e1e;
+  }
+
+  .load {
+    color: #1e1e1e;
+  }
+
+  .meallist_text {
+    font-family: 'Pretendard Variable';
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #1e1e1e;
+  }
+
+  svg {
+    fill: #1e1e1e;
+  }
+
+  .alarmui {
+    background-color: #fbfbfb;
+  }
+
+  .titlebox {
+    color: #1e1e1e;
+  }
+
+  .subtitlebox {
+    color: #1e1e1e;
+  }
 }
 
 .mainpage {
@@ -169,15 +186,17 @@ body {
 }
 
 .load {
-  font: 600 clamp(.5rem, 6.5vw, 4rem) 'Pretendard Variable', sans-serif;
+  font: 650 clamp(.5rem, 6.5vw, 4rem) 'Pretendard Variable', sans-serif;
+  margin-top: 8%;
 }
 
-@keyframes textconfirmA{
+@keyframes textconfirmA {
   0% {
     -webkit-filter: blur(15px);
     opacity: 0.0;
     transform: translate(-100%, 0px);
   }
+
   100% {
     -webkit-filter: blur(0px);
     opacity: 1.0;
@@ -185,12 +204,13 @@ body {
   }
 }
 
-@keyframes textconfirmB{
-  0%{
+@keyframes textconfirmB {
+  0% {
     -webkit-filter: blur(30px);
     opacity: 0.0;
     transform: translate(-100%, 0px);
   }
+
   100% {
     -webkit-filter: blur(0px);
     opacity: 1.0;
@@ -198,12 +218,13 @@ body {
   }
 }
 
-@keyframes textcxm{
-  0%{
+@keyframes textcxm {
+  0% {
     -webkit-filter: blur(15px);
     opacity: 0.0;
     transform: translate(-100%, 0px);
   }
+
   100% {
     -webkit-filter: blur(0px);
     opacity: 1.0;
@@ -212,15 +233,17 @@ body {
 }
 
 @keyframes sizeup {
-  0%{
+  0% {
     -webkit-filter: blur(0px);
     opacity: 1.0;
     transform: translate(-50%, -65%);
   }
-  20%{
+
+  20% {
     opacity: 1.0;
   }
-  100%{
+
+  100% {
     -webkit-filter: blur(100px);
     opacity: 0.0;
     transform: translate(100%, -65%);
@@ -228,16 +251,18 @@ body {
 }
 
 @keyframes iconload {
-  0%{
+  0% {
     opacity: 0.0;
     -webkit-filter: blur(50px);
     transform: translate(0%, -75%);
   }
-  50%{
+
+  50% {
     opacity: 0.15;
     -webkit-filter: blur(5px);
   }
-  100%{
+
+  100% {
     opacity: 1.0;
     -webkit-filter: blur(0px);
     transform: translate(0%, 0%);

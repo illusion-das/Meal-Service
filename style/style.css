@@ -15,10 +15,10 @@
 }
 
 body {
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .tossface {
@@ -28,7 +28,6 @@ body {
 .Pretendard {
   font-family: Pretendard Variable, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
 }
-
 @media (prefers-color-scheme: dark) {
     body{
         background-color: #1e1e1e;
@@ -214,7 +213,6 @@ body {
 
 @keyframes sizeup {
   0%{
-    size: 100%;
     -webkit-filter: blur(0px);
     opacity: 1.0;
     transform: translate(-50%, -65%);
@@ -223,10 +221,26 @@ body {
     opacity: 1.0;
   }
   100%{
-    size: 200%;
     -webkit-filter: blur(100px);
     opacity: 0.0;
     transform: translate(100%, -65%);
+  }
+}
+
+@keyframes iconload {
+  0%{
+    opacity: 0.0;
+    -webkit-filter: blur(50px);
+    transform: translate(0%, -75%);
+  }
+  50%{
+    opacity: 0.15;
+    -webkit-filter: blur(5px);
+  }
+  100%{
+    opacity: 1.0;
+    -webkit-filter: blur(0px);
+    transform: translate(0%, 0%);
   }
 }
 
@@ -244,4 +258,8 @@ body {
 
 .playanimated_sizeup {
   animation: sizeup 0.35s ease-in-out forwards;
+}
+
+.playanimeted_logo {
+  animation: iconload 0.25s ease-in-out forwards;
 }

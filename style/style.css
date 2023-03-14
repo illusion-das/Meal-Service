@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("TossFaceFontMac.ttf") format("truetype");
+  src: url("font/TossFaceFontMac.ttf") format("truetype");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-weight: 45 920;
     font-style: normal;
     font-display: swap;
-    src: local('Pretendard Variable'), url('PretendardVariable.ttf') format("truetype");
+    src: local('Pretendard Variable'), url('font/PretendardVariable.ttf') format("truetype");
 }
 
 body {

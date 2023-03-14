@@ -34,7 +34,7 @@ const PageRefrash = (emoji, message, iscreate) => {
             function(){
                 Class_Emoji.innerHTML = EmojiRandom();
             }
-        , 400);
+        , 750);
     }else{
         const loadui = document.querySelector('.loadui');
         loadui.classList.add('playanimated_sizeup');

@@ -30,6 +30,11 @@ const PageRefrash = (emoji, message, iscreate) => {
     if(iscreate){
         Class_Emoji.innerHTML = EmojiRandom();
         Class_Message.innerHTML = MsgRandom();
+        setInterval(
+            function(){
+                Class_Emoji.innerHTML = EmojiRandom();
+            }
+        , 400);
     }else{
         const loadui = document.querySelector('.loadui');
         loadui.classList.add('playanimated_sizeup');

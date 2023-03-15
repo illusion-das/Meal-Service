@@ -1,1 +1,2 @@
-# Meal-Service
+# **Meal-Service**
+> **레포지토리 안내**<br>다음 레포지토리는 dubu에 내장되는 웹앱의 일부 소스코드 입니다.

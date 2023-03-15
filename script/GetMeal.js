@@ -63,13 +63,13 @@ const randroll = (zone) => {
     case 'lunch':
       switch(randint(0, 1)){
         case 0: rtr = '자꾸만 기다려지는'; break;
-        case 1: rtr = '막 배고픈 시간인'; break;
+        case 1: rtr = '조과장의 점심시간인'; break;
     }
     break;
     case 'dinner':
       switch(randint(0, 1)){
         case 0: rtr = '마지막을 장식할'; break;
-        case 1: rtr = '완전 맛있을거 같은'; break;
+        case 1: rtr = '이건 규선이도 기달리는'; break;
     }
     break;
   }

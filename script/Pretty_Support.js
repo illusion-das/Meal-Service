@@ -29,7 +29,7 @@ const EmojiRandom = () => {
 }
 
 const MsgRandom = () => {
-    switch(randint(0, 6)) {
+    switch(randint(0, 7)) {
         case 0: return '열심히 급식표를<br>읽고있는 중'
         case 1: return '오늘 급식을<br>수소문 하는 중'
         case 2: return '급식 아주머니에게<br>물어보는 중'
@@ -37,6 +37,7 @@ const MsgRandom = () => {
         case 4: return '다른 반 급식표<br>빼돌리는 중'
         case 5: return '데이터베이스<br>뜯어보는 중'
         case 6: return '조과장에게<br>여쭤보는 중'
+        case 7: return 'SQL 인젝션<br>시도하는 중'
     }
 }
 

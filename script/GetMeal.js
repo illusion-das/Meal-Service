@@ -50,6 +50,32 @@ const nowdate = () => {
   return [new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()]
 }
 
+/** randroll => 랜덤한 메세지를 출력합니다. */
+const randroll = (zone) => {
+  rtr = '';
+  switch(zone){
+    case 'breakfast': 
+      switch(randint(0, 1)){
+        case 0: rtr = '피곤해도 먹고싶은'; break;
+        case 1: rtr = '맨발로 안뛰고싶은'; break;
+    }
+    break;
+    case 'lunch':
+      switch(randint(0, 1)){
+        case 0: rtr = '자꾸만 기다려지는'; break;
+        case 1: rtr = '막 배고픈 시간인'; break;
+    }
+    break;
+    case 'dinner':
+      switch(randint(0, 1)){
+        case 0: rtr = '마지막을 장식할'; break;
+        case 1: rtr = '완전 맛있을거 같은'; break;
+    }
+    break;
+  }
+  return rtr;
+}
+
 /** MealZone_ChangeText => 급식 시간대에 따라 사용자에게 표시되는 텍스트를 수정합니다. */
 const MealZone_ChangeText = (mealZone) => {
   
@@ -58,16 +84,16 @@ const MealZone_ChangeText = (mealZone) => {
 
   switch(mealZone){
     case 'breakfast':
-      subText.innerHTML = '피곤해도 먹고싶은'
-      mainText.innerHTML = '오늘의 아침은'
+      subText.innerHTML = randroll(mealZone);
+      mainText.innerHTML = '오늘의 아침은';
       break;
     case 'lunch':
-      subText.innerHTML = '자꾸만 기다려지는'
-      mainText.innerHTML = '오늘의 점심은'
+      subText.innerHTML = randroll(mealZone);
+      mainText.innerHTML = '오늘의 점심은';
       break;
     case 'dinner':
-      subText.innerHTML = '마지막을 장식할'
-      mainText.innerHTML = '오늘의 저녁은'
+      subText.innerHTML = randroll(mealZone);
+      mainText.innerHTML = '오늘의 저녁은';
       break;
   }
 }

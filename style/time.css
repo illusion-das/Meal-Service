@@ -38,19 +38,46 @@ body {
     background-color: #1e1e1e;
   }
 
-  h1{
-    text-align: center;
+  .timeside{
     font-family: 'Pretendard Variable';
-    font-size: 28px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: right;
+  }
+
+  .timetop{
+    font-family: 'Pretendard Variable';
+    font-size: 16px;
     font-weight: 800;
     color: #ffffff;
   }
 
-  h4{
-    text-align: center;
+  .nowtime{
     font-family: 'Pretendard Variable';
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
+    color: #ffffff;
+  }
+
+  .bd{
+    border: 1px solid #ffffff;
+    border-spacing: 10px;
+  }
+
+  .toptime{
+    color: #466dfa;
+  }
+
+  .bottomtime{
+    color: #ffffff;
+    opacity: 50%;
+  }
+
+  .title{
+    font-family: 'Pretendard Variable';
+    font-size: 28px;
+    font-weight: 800;
     color: #ffffff;
   }
 }
@@ -64,19 +91,46 @@ body {
     background-color: #ffffff;
   }
 
-  h1{
-    text-align: center;
+  .timeside{
     font-family: 'Pretendard Variable';
-    font-size: 28px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #1e1e1e;
+    text-align: right;
+  }
+
+  .timetop{
+    font-family: 'Pretendard Variable';
+    font-size: 16px;
     font-weight: 800;
     color: #1e1e1e;
   }
 
-  h4{
-    text-align: center;
+  .nowtime{
     font-family: 'Pretendard Variable';
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
+    color: #1e1e1e;
+  }
+
+  .bd{
+    border: 1px solid #1e1e1e;
+    border-spacing: 10px;
+  }
+
+  .toptime{
+    color: #466dfa;
+  }
+
+  .bottomtime{
+    color: #000000;
+    opacity: 50%;
+  }
+
+  .title{
+    font-family: 'Pretendard Variable';
+    font-size: 28px;
+    font-weight: 800;
     color: #1e1e1e;
   }
 }

@@ -7,49 +7,10 @@
 
     <title>Klaud APP</title>
     <link rel="stylesheet" href="style/style.css">
-    <script src="script/GetMeal.js"></script>
-    <script src="script/Pretty_Support.js"></script>
 
   </head>
+
   <body>
-    
-    <!-- 메인 페이지 -->
-    <div class="mainpage">
-
-        <!-- 오늘 급식 -->
-          <div class="titlemove">
-            <div class="sub_title" id="sub_title">(｡´-д-)</div>
-            <div class="main_title" id="main_title">오늘은 식판이<br>비어있네요</div>
-
-            <!-- 급식 정보 텍스트  -->
-            <div class="meal_title" id="meal_title"></div>
-          </div>
-
-        <!-- 급식 정보 로드 -->
-        <div class="loadui" id="loadui">
-            <div id="bigemoji" class="bigemoji tossface"></div>
-            <div class="load" id="load"></div>
-        </div>
-    </div>
-
-    <!-- 급식정보 자동 가져오기 스크립트 -->
-    <script>
-      const getMeal = async () => {
-        const meal = await Meal_Request('high', 'N100000164');
-        const mealElement = document.getElementById("meal_title");
-        const txtA = document.querySelector('.sub_title');
-        const txtB = document.querySelector('.main_title');
-
-        mealElement.innerHTML = meal.join("<br>");
-        txtA.classList.add('playanimated_fadetextA');
-        txtB.classList.add('playanimated_fadetextB');
-        mealElement.classList.add('playanimated_fadetextC');
-        PageRefrash('bigemoji', 'load', false);
-      }
-
-      PageRefrash('bigemoji', 'load', true);
-      getMeal();
-
-    </script>
+    <h1>현재는 서비스를 점검하고 있어요!</h1><h4>다음 주에 다시 서비스를 시작할게요!</h4>
   </body>
 </html>

@@ -15,7 +15,8 @@ var pag = getParams();
 
 console.log(pag);
 
-// var _Grade = pag['grade'];
+var _Grade = pag["grade"];
+console.log(_Grade);
 // var _Class = pag['class'];
 
 //const TitleMessage = document.getElementById('title');

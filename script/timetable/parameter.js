@@ -19,5 +19,5 @@ var _Grade = pag["grade"];
 console.log(_Grade);
 var _Class = pag['class'];
 console.log(_Class);
-const tm = document.getElementById('title');
+const tm = document.getElementById('titlex');
 tm.innerHTML = _Grade + '학년 ' + tm + '반';

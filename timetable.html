@@ -80,5 +80,13 @@
                 <td class="nowtime">두번째 칸</td>
             </tr>
             </table>
+
+            <script>
+                var _Grade = getParameterByName("grade");
+                var _Class = getParameterByName("class");
+    
+                const TitleMessage = document.getElementById('title');
+                TitleMessage.innerHTML = `${_Grade}학년 ${_Class}반`;
+            </script>
     </body>
 </html>

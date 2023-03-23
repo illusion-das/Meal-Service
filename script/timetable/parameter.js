@@ -1,9 +1,11 @@
-function getParameterByName(name) {
-    var url = window.location.href;
-    name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
-    var results = regex.exec(url);
-    if (!results) return "0";
-    if (!results[2]) return "";
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-  }
+var urlParams = location.search.split(/[?&]/).slice(1).map(function(paramPair) {
+
+    return paramPair.split(/=(.+)?/).slice(0, 2);
+
+}).reduce(function(obj, pairArray) {
+
+    obj[pairArray[0]] = pairArray[1];
+
+    return obj;
+
+}, {});

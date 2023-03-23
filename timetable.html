@@ -82,8 +82,8 @@
             </table>
 
             <script>
-                var _Grade = getParameterByName("grade");
-                var _Class = getParameterByName("class");
+                var _Grade = urlParams.grade;
+                var _Class = urlParams.sclass;
     
                 const TitleMessage = document.getElementById('title');
                 TitleMessage.innerHTML = `${_Grade}학년 ${_Class}반`;

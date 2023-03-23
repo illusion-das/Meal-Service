@@ -14,7 +14,7 @@
     </head>
 
     <body>
-        <div class="title">2학년 2반</div>
+        <div class="title" id="title"></div>
 
         <table class="bd">
                 <th class="timetop toptime"></th>
@@ -80,13 +80,5 @@
                 <td class="nowtime">두번째 칸</td>
             </tr>
             </table>
-
-            <script>
-                var _Grade = urlParams.grade;
-                var _Class = urlParams.sclass;
-    
-                const TitleMessage = document.getElementById('title');
-                TitleMessage.innerHTML = `${_Grade}학년 ${_Class}반`;
-            </script>
     </body>
 </html>

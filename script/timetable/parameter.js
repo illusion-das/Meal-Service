@@ -17,8 +17,7 @@ console.log(pag);
 
 var _Grade = pag["grade"];
 console.log(_Grade);
-// var _Class = pag['class'];
-
-//const TitleMessage = document.getElementById('title');
-//TitleMessage.innerHTML = `${_Grade}학년 0반`;
-
+var _Class = pag['class'];
+console.log(_Class);
+const tm = document.getElementById('title');
+tm.innerHTML = _Grade + '학년 ' + tm + '반';

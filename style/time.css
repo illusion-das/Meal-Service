@@ -14,13 +14,6 @@
   src: local('Pretendard Variable'), url('font/PretendardVariable.ttf') format("truetype");
 }
 
-body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 .tossface {
   font-family: Tossface;
 }
@@ -32,6 +25,10 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #1e1e1e;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   .mainpage {
@@ -84,7 +81,11 @@ body {
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: #fbfbfb;
+    background-color: #ffffff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   .mainpage {

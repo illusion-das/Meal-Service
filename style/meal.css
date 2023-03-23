@@ -92,6 +92,9 @@
   left: 25%;
   opacity: 0.0;
   transform: translateX(-50%);
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .sub_title {
@@ -101,6 +104,9 @@
   left: 25%;
   opacity: 0.0;
   transform: translateX(-50%);
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .titlemove {
@@ -111,6 +117,9 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .meal_title {
@@ -121,6 +130,9 @@
   left: 25%;
   opacity: 0.0;
   transform: translateX(-50%);
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .loadui {

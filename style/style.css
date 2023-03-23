@@ -11,24 +11,8 @@
   font-weight: 45 920;
   font-style: normal;
   font-display: swap;
-  src: local('Pretendard Variable'), url('font/PretendardVariable.ttf') format("truetype");
+  src: local('Pretendard Variable'), url('font/PretendardVariable.woff2') format("woff2-variations");
 }
-
-@font-face {
-  font-family: 'GmarketSans';
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: local('GmarketSans'), url('font/GmarketSansBold.ttf') format("truetype");
-} 
-
-@font-face {
-  font-family: 'GmarketSans';
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  src: local('GmarketSans'), url('font/GmarketSansMedium.ttf') format("truetype");
-} 
 
 .tossface {
   font-family: Tossface;
@@ -58,16 +42,22 @@
     font-weight: 800;
     color: #ffffff;
     text-shadow: 0px 0px 36px #ffffff33;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .subt{
     text-align: center;
     font-family: 'Pretendard Variable';
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
     color: #ffffff;
     margin-top: 2%;
     text-shadow: 0px 0px 36px #ffffff33;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
   }
   
   .navback{
@@ -91,20 +81,26 @@
   .mt{
     text-align: center;
     font-family: 'Pretendard Variable';
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 800;
     color: #1e1e1e;
     text-shadow: 0px 0px 36px #ffffff33;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .subt{
     text-align: center;
     font-family: 'Pretendard Variable';
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     color: #1e1e1e;
     margin-top: 2%;
     text-shadow: 0px 0px 36px #ffffff33;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .navback{

@@ -14,8 +14,8 @@ function getParams(){
 var pag = getParams();
 
 var _Grade = pag['grade'];
-var _Class = pag['class'];
+// var _Class = pag['class'];
 
 const TitleMessage = document.getElementById('title');
-TitleMessage.innerHTML = `${_Grade}학년 ${_Class}반`;
+TitleMessage.innerHTML = `${_Grade}학년 0반`;
 

@@ -1,17 +1,21 @@
-var urlParams = location.search.split(/[?&]/).slice(1).map(function(paramPair) {
+function getParams(){
+    var url = window.location.search.replace('?','');
+    var params = {};
+    var urlArray = url.split('&');
 
-    return paramPair.split(/=(.+)?/).slice(0, 2);
+    for(var i in urlArray)
+    {
+      var param = urlArray[i].split('=');
+      params[param[0]] = param[1]; 
+    }
+    return params;
+}
 
-}).reduce(function(obj, pairArray) {
+var pag = getParams();
 
-    obj[pairArray[0]] = pairArray[1];
-
-    return obj;
-
-}, {});
-
-var _Grade = urlParams.grade;
-var _Class = urlParams.sclass;
+var _Grade = pag['grade'];
+var _Class = pag['class'];
 
 const TitleMessage = document.getElementById('title');
 TitleMessage.innerHTML = `${_Grade}학년 ${_Class}반`;
+

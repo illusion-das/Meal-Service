@@ -14,12 +14,21 @@
   src: local('Pretendard Variable'), url('font/PretendardVariable.ttf') format("truetype");
 }
 
-body {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+@font-face {
+  font-family: 'GmarketSans';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local('GmarketSans'), url('font/GmarketSansBold.ttf') format("truetype");
+} 
+
+@font-face {
+  font-family: 'GmarketSans';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local('GmarketSans'), url('font/GmarketSansMedium.ttf') format("truetype");
+} 
 
 .tossface {
   font-family: Tossface;
@@ -31,6 +40,10 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     background-color: #1e1e1e;
   }
 
@@ -38,45 +51,131 @@ body {
     background-color: #1e1e1e;
   }
 
-  h1{
+  .mt{
     text-align: center;
     font-family: 'Pretendard Variable';
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 800;
     color: #ffffff;
+    text-shadow: 0px 0px 36px #ffffff33;
   }
 
-  h4{
+  .subt{
     text-align: center;
     font-family: 'Pretendard Variable';
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
     color: #ffffff;
+    margin-top: 2%;
+    text-shadow: 0px 0px 36px #ffffff33;
+  }
+  
+  .navback{
+    background-color: #282830;
   }
 }
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: #fbfbfb;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #ffffff;
   }
 
   .mainpage {
     background-color: #ffffff;
   }
 
-  h1{
+  .mt{
     text-align: center;
     font-family: 'Pretendard Variable';
     font-size: 28px;
     font-weight: 800;
     color: #1e1e1e;
+    text-shadow: 0px 0px 36px #ffffff33;
   }
 
-  h4{
+  .subt{
     text-align: center;
     font-family: 'Pretendard Variable';
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     color: #1e1e1e;
+    margin-top: 2%;
+    text-shadow: 0px 0px 36px #ffffff33;
   }
+
+  .navback{
+    background-color: #fbfbfb;
+  }
+}
+
+.centerpit{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bigmoji{
+  text-align: center;
+  font-family: 'tossface';
+  font-size: 128px;
+  text-shadow: 0px 0px 36px #ffc84d44;
+}
+
+.hylk {
+  text-align: center;
+  font-family: 'Pretendard Variable';
+  font-size: 12px;
+  font-weight: 700;
+  color: #466dfa;
+  text-shadow: 0px 0px 8px #466dfa55;
+}
+
+a:link{
+  color: #466dfa;
+}
+
+a:visited {
+  color: #466dfa;
+}
+
+a:hover {
+  color: #314db3;
+}
+
+a:active{
+  color: #466dfa;
+}
+
+.navbar{
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 20px 12px;
+  border-radius: 10px;
+}
+
+.logos{
+  margin-left: 12px;
+  align-items: center;
+  font-family: 'GmarketSans';
+}
+
+.logofont{
+  font-size: 24px;
+  color: #466dfa;
+  font-family: 'GmarketSans';
+  font-weight: 600;
+}
+
+.smallfnt{
+  font-size: 14px;
+  color: #466dfa88;
+  font-family: 'GmarketSans';
+  font-weight: 500;
 }

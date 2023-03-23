@@ -1,12 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable.css");
-
-@font-face {
-  font-family: "Tossface";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("font/TossFaceFontMac.ttf") format("truetype");
-}
+@import url('https://cdn.jsdelivr.net/gh/toss/tossface/dist/tossface.css');
 
 .tossface {
   font-family: Tossface;

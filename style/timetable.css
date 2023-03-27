@@ -10,6 +10,16 @@
   font-display: fallback;
 }
 
+th{
+  width: 6rem;
+  height: 2.5rem;
+}
+
+td{
+  width: 6rem;
+  height: 3.5rem;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #1e1e1e;
@@ -28,7 +38,7 @@
     font-size: 16px;
     font-weight: 800;
     color: #ffffff;
-    text-align: right;
+    text-align: center;
   }
 
   .timetop{
@@ -43,15 +53,12 @@
     font-size: 14px;
     font-weight: 400;
     color: #ffffff;
+    text-align: center;
   }
 
   .bd{
     border: 1px solid #ffffff;
-    border-spacing: 10px;
-  }
-
-  .toptime{
-    color: #466dfa;
+    border-spacing: 0px;
   }
 
   .bottomtime{
@@ -85,7 +92,7 @@
     font-size: 16px;
     font-weight: 800;
     color: #1e1e1e;
-    text-align: right;
+    text-align: center;
   }
 
   .timetop{
@@ -100,15 +107,12 @@
     font-size: 14px;
     font-weight: 400;
     color: #1e1e1e;
+    text-align: center;
   }
 
   .bd{
     border: 1px solid #1e1e1e;
     border-spacing: 10px;
-  }
-
-  .toptime{
-    color: #466dfa;
   }
 
   .bottomtime{
@@ -122,4 +126,12 @@
     font-weight: 800;
     color: #1e1e1e;
   }
+}
+
+.toptimebgx{
+  background-color: #466dfa55;
+}
+
+.toptime{
+  color: #466dfa;
 }

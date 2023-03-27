@@ -26,6 +26,13 @@ function ax(){
   const indatx = document.getElementById('times' + datx);
   indatx.classList.add('toptime');
 
+  var step;
+
+  for (step = 1; step <= 7; step++) {
+    let indabx = document.getElementById(`t${step}${datx}`);
+    indabx.classList.add('toptimebgx');
+  }
+
 }
 
 function getDayOfWeek(dstr){

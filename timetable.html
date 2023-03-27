@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-        <title>Klaud - 시간표</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-        <link rel="stylesheet" href="style/timetable.css">
-        <script src="script/timetable/parameter.js"></script>
-    </head>
+    <title>Klaud - 시간표</title>
 
-    <body>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet" href="style/timetable.css">
+    <script src="script/timetable/parameter.js"></script>
+</head>
+
+<body>
+
+    <div class="mainpageX mainpage">
+
         <div class="titlex" id="titlex"></div>
 
         <table class="bd">
-                <th class="timetop" id="times"></th>
-                <th class="timetop" id="times1">월</th>
-                <th class="timetop" id="times2">화</th>
-                <th class="timetop" id="times3">수</th>
-                <th class="timetop" id="times4">목</th>
-                <th class="timetop" id="times5">금</th>
+            <th class="timetop" id="times"></th>
+            <th class="timetop" id="times1">월</th>
+            <th class="timetop" id="times2">화</th>
+            <th class="timetop" id="times3">수</th>
+            <th class="timetop" id="times4">목</th>
+            <th class="timetop" id="times5">금</th>
             <tr>
                 <td class="timeside"> 1 </td>
                 <td class="nowtime" id="t11">x</td>
@@ -79,8 +83,11 @@
                 <td class="nowtime" id="t74">x</td>
                 <td class="nowtime" id="t75">x</td>
             </tr>
-            </table>
+        </table>
 
-            <script>ax();</script>
-    </body>
+    </div>
+
+    <script>ax();</script>
+</body>
+
 </html>

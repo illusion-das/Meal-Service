@@ -20,6 +20,11 @@ td{
   height: 3.5rem;
 }
 
+.mainpageX {
+  display: grid;
+  place-content: center;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #1e1e1e;

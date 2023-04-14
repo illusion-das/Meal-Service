@@ -44,3 +44,4 @@ function getDayOfWeek(dstr){
   return dayOfWeek;
 
 }
+

@@ -34,7 +34,7 @@ const mealZone = (data) => {
 
 /** Meal_Request => 파라미터에 입력 된 값을 기반으로 API에 요청하고 그 정보를 파싱하여 반환합니다. */
 const Meal_Request = async (schoolType, schoolCode, date = nowdate()) => {
-  const API = `https://school-api-a5575.firebaseapp.com/api/${schoolType}/${schoolCode}?year=${date[0]}&month=${date[1]}&date=${date[2]}&allergy=hidden`;
+  const API = `https://school-api.xyz/api/${schoolType}/${schoolCode}?year=${date[0]}&month=${date[1]}&date=${date[2]}&allergy=hidden`;
   const response = await fetch(API);
   const data = await response.json();
   const result = mealZone(data);
